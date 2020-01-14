@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  redis_broker:
+    image: redis:latest
+
+  t2k_module:
+    build: t2k_module/.
+    image: new_escaleport_t2k
+    depends_on:
+    - redis_broker
+    volumes:
+    - C:/PERSO/code/redis_subpub/t2k_module:/t2k_module
+  
+  escale_module: 
+    build: escale_module/.
+    image: new_escaleport_escale
+    depends_on:
+    - redis_broker
+    - t2k_module
+    volumes:
+    - C:/PERSO/code/redis_subpub/escale_module:/escale_module
+

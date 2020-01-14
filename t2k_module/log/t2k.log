@@ -1,0 +1,6 @@
+INFO:root:None
+INFO:root:{'type': 'subscribe', 'pattern': None, 'channel': b'call_change', 'data': 1}
+INFO:root:{'type': 'message', 'pattern': None, 'channel': b'call_change', 'data': b'FRCQF202000012'}
+INFO:root:{'type': 'message', 'pattern': None, 'channel': b'call_change', 'data': b'FRCQF202000012'}
+INFO:root:{'type': 'message', 'pattern': None, 'channel': b'call_change', 'data': b'FRCQF202000012'}
+INFO:root:{'type': 'message', 'pattern': None, 'channel': b'call_change', 'data': b'FRCQF202000023'}

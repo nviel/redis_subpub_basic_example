@@ -1,0 +1,7 @@
+FROM python:3
+
+RUN pip install --proxy pfrie-std.proxy.e2.rie.gouv.fr:8080 redis
+
+RUN mkdir /t2k_module
+
+CMD [ "python", "/t2k_module/t2k.py" ]
